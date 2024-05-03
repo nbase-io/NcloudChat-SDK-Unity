@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     private Queue<NBaseSDK.Message> messageQueue = new Queue<NBaseSDK.Message>();
     public GameObject chatPanel, textObject;
     public TMP_InputField chatBox;
+    public Button[] chatButtons;
 
     [SerializeField]
     public List<Message> messageList = new List<Message>();
@@ -23,8 +25,13 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Initialize();
+
+        foreach (Button button in chatButtons)
+        {
+            button.onClick.AddListener(() => OnChatButtonClick(button));
+        }
     }
-    
+
     void Update()
     {
         HandleInput();
@@ -142,7 +149,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
+
     public void sendMessage(string text)
     {
         _nc.sendMessage(channelId, "text", text, null, true);
@@ -216,7 +223,7 @@ public class GameManager : MonoBehaviour
                 return new Color32(255, 255, 255, 255);
         }
     }
-    
+
     //public void setListener()
     //{
     //    _nc.dispatcher.onConnected += e =>
@@ -232,7 +239,7 @@ public class GameManager : MonoBehaviour
     //    {
     //        addMessage("onErrorReceived: " + e.ToString(), Message.MessageType.Info);
     //    };
-        
+
     //    //_nc.dispatcher.onMessageReceived += e =>
     //    //{
     //    //    addMessage("onMessageReceived: " + e.ToString(), Message.MessageType.Info);
@@ -266,6 +273,23 @@ public class GameManager : MonoBehaviour
     //        addMessage("onStopTyping: " + e.ToString(), Message.MessageType.Info);
     //    };
     //}
+
+    void OnChatButtonClick(Button button)
+    {
+        switch (button.name)
+        {
+            case "btnSend":
+                if (!string.IsNullOrEmpty(chatBox.text))
+                {
+                    sendMessage(chatBox.text);
+                    chatBox.text = "";
+                    chatBox.ActivateInputField();
+                }
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 [System.Serializable]
