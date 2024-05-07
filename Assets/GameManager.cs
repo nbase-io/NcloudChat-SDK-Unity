@@ -75,11 +75,13 @@ public class GameManager : MonoBehaviour
         }
         catch (InvalidOperationException e)
         {
-            Debug.Log("InvalidOperationException: {0}" + e.Message);
+            Debug.Log("InvalidOperationException: " + e.Message);
+            addMessage("[Error] InvalidOperationException : " + e.Message, Message.MessageType.PlayerMessage);
         }
         catch (Exception e)
         {
-            Debug.Log("Error: {0}" + e.Message);
+            Debug.Log("Error: " + e.Message);
+            addMessage("[Error] Error : " + e.Message, Message.MessageType.PlayerMessage);
         }
 
     }
@@ -121,11 +123,13 @@ public class GameManager : MonoBehaviour
         }
         catch (InvalidOperationException e)
         {
-            Debug.LogError("InvalidOperationException: " + e.Message);
+            Debug.Log("InvalidOperationException: " + e.Message);
+            addMessage("[Error] InvalidOperationException : " + e.Message, Message.MessageType.PlayerMessage);
         }
         catch (Exception e)
         {
-            Debug.LogError(e.Message);
+            Debug.Log("Error: " + e.Message);
+            addMessage("[Error] Error : " + e.Message, Message.MessageType.PlayerMessage);
         }
 
     }
@@ -152,7 +156,20 @@ public class GameManager : MonoBehaviour
 
     public void sendMessage(string text)
     {
-        _nc.sendMessage(channelId, "text", text, null, true);
+        try
+        {
+            _nc.sendMessage(channelId, "text", text, null, true);
+        }
+        catch (InvalidOperationException e)
+        {
+            Debug.Log("InvalidOperationException: " + e.Message);
+            addMessage("[Error] InvalidOperationException : " + e.Message, Message.MessageType.PlayerMessage);
+        }
+        catch (Exception e)
+        {
+            Debug.Log("Error: " + e.Message);
+            addMessage("[Error] Error : " + e.Message, Message.MessageType.PlayerMessage);
+        }
     }
     public void addMessage(string text, Message.MessageType messageType)
     {
@@ -198,6 +215,7 @@ public class GameManager : MonoBehaviour
         catch (Exception e)
         {
             Debug.LogError("Error adding message: " + e.Message);
+            addMessage("[Error] Error adding message : " + e.Message, Message.MessageType.PlayerMessage);
         }
 
     }
