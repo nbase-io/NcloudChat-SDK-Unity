@@ -142,7 +142,12 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
+    public void onClickSendMessage()
+    {
+        sendMessage(chatBox.text);
+        chatBox.text = "";
+        chatBox.ActivateInputField();
+    }
     public void sendMessage(string text)
     {
         _nc.sendMessage(channelId, "text", text, null, true);
