@@ -616,6 +616,7 @@ MonoBehaviour:
   chatPanel: {fileID: 1842290863}
   textObject: {fileID: 8341923301313026647, guid: 2496d7180c83c483fa40b534e84dac55, type: 3}
   chatBox: {fileID: 831577351}
+  chatButtons: []
   messageList: []
 --- !u!4 &562673360
 Transform:
@@ -1501,8 +1502,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1686822094}
   m_HandleRect: {fileID: 1686822093}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.00000006471622
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
