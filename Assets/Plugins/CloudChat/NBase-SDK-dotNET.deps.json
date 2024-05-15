@@ -10,11 +10,13 @@
       "NBase-SDK-dotNET/1.0.0": {
         "dependencies": {
           "GraphQL": "7.8.0",
-          "GraphQL.Client": "6.0.3",
-          "GraphQL.Client.Serializer.Newtonsoft": "6.0.3",
+          "GraphQL.Client": "6.0.5",
+          "GraphQL.Client.Serializer.Newtonsoft": "6.0.5",
           "GraphQL.NewtonsoftJson": "7.8.0",
           "SocketIO.Core": "3.1.1",
           "SocketIO.Serializer.Core": "3.1.1",
+          "SocketIO.Serializer.NewtonsoftJson": "3.1.1",
+          "SocketIO.Serializer.SystemTextJson": "3.1.1",
           "SocketIOClient": "3.1.1"
         },
         "runtime": {
@@ -45,50 +47,50 @@
         }
       },
       "GraphQL.Analyzers/7.8.0": {},
-      "GraphQL.Client/6.0.3": {
+      "GraphQL.Client/6.0.5": {
         "dependencies": {
-          "GraphQL.Client.Abstractions": "6.0.3",
-          "GraphQL.Client.Abstractions.Websocket": "6.0.3",
+          "GraphQL.Client.Abstractions": "6.0.5",
+          "GraphQL.Client.Abstractions.Websocket": "6.0.5",
           "System.Reactive": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/GraphQL.Client.dll": {
-            "assemblyVersion": "6.0.3.0",
-            "fileVersion": "6.0.3.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
-      "GraphQL.Client.Abstractions/6.0.3": {
+      "GraphQL.Client.Abstractions/6.0.5": {
         "dependencies": {
-          "GraphQL.Primitives": "6.0.3"
+          "GraphQL.Primitives": "6.0.5"
         },
         "runtime": {
           "lib/netstandard2.0/GraphQL.Client.Abstractions.dll": {
-            "assemblyVersion": "6.0.3.0",
-            "fileVersion": "6.0.3.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
-      "GraphQL.Client.Abstractions.Websocket/6.0.3": {
+      "GraphQL.Client.Abstractions.Websocket/6.0.5": {
         "dependencies": {
-          "GraphQL.Client.Abstractions": "6.0.3"
+          "GraphQL.Client.Abstractions": "6.0.5"
         },
         "runtime": {
           "lib/netstandard2.0/GraphQL.Client.Abstractions.Websocket.dll": {
-            "assemblyVersion": "6.0.3.0",
-            "fileVersion": "6.0.3.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
-      "GraphQL.Client.Serializer.Newtonsoft/6.0.3": {
+      "GraphQL.Client.Serializer.Newtonsoft/6.0.5": {
         "dependencies": {
-          "GraphQL.Client.Abstractions.Websocket": "6.0.3",
+          "GraphQL.Client.Abstractions.Websocket": "6.0.5",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/GraphQL.Client.Serializer.Newtonsoft.dll": {
-            "assemblyVersion": "6.0.3.0",
-            "fileVersion": "6.0.3.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
@@ -105,11 +107,11 @@
           }
         }
       },
-      "GraphQL.Primitives/6.0.3": {
+      "GraphQL.Primitives/6.0.5": {
         "runtime": {
           "lib/netstandard2.0/GraphQL.Primitives.dll": {
-            "assemblyVersion": "6.0.3.0",
-            "fileVersion": "6.0.3.0"
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
           }
         }
       },
@@ -153,6 +155,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/SocketIO.Serializer.Core.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "SocketIO.Serializer.NewtonsoftJson/3.1.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "SocketIO.Core": "3.1.1",
+          "SocketIO.Serializer.Core": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SocketIO.Serializer.NewtonsoftJson.dll": {
             "assemblyVersion": "3.1.1.0",
             "fileVersion": "3.1.1.0"
           }
@@ -323,33 +338,33 @@
       "path": "graphql.analyzers/7.8.0",
       "hashPath": "graphql.analyzers.7.8.0.nupkg.sha512"
     },
-    "GraphQL.Client/6.0.3": {
+    "GraphQL.Client/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fanYI8AyQrUbybLNyZwAN9CE96uFLT9I/451eOhVl5MdDNWpCwkQqXOWla/QWwDF9gTxBFkLI0ESEGu5KKhIQw==",
-      "path": "graphql.client/6.0.3",
-      "hashPath": "graphql.client.6.0.3.nupkg.sha512"
+      "sha512": "sha512-VYultoo/238C//YZT5YyvgcYH4qkchVvwoypm2ysUGI3kmAXFoK0vQcfBiWKVGkZOKek3O1BaES7cclVoVPkUQ==",
+      "path": "graphql.client/6.0.5",
+      "hashPath": "graphql.client.6.0.5.nupkg.sha512"
     },
-    "GraphQL.Client.Abstractions/6.0.3": {
+    "GraphQL.Client.Abstractions/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oBoyP/GZ6k18giYscD4H0W3BQWtzOEKm3KuCsydyT4TWzP1OTr6dtSKjPA29riyLHuG6N/mdJMxvAKPrVC4a2w==",
-      "path": "graphql.client.abstractions/6.0.3",
-      "hashPath": "graphql.client.abstractions.6.0.3.nupkg.sha512"
+      "sha512": "sha512-1JlkgVjt92JN5BmEUiQ6U5QyfukRHUD1XaeXIlwiFNYm18YZ6cgafBAYjrMtG9+mlunxrtmVZXMaZBD6LycXpA==",
+      "path": "graphql.client.abstractions/6.0.5",
+      "hashPath": "graphql.client.abstractions.6.0.5.nupkg.sha512"
     },
-    "GraphQL.Client.Abstractions.Websocket/6.0.3": {
+    "GraphQL.Client.Abstractions.Websocket/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tJ/Mv14U5+tcZy2KR36PkoFqne+0aRYcpl5A6QiwrUkOU1pqpuWy7Hp8xaMeac2yP99WbQxUOP6uX5FvR8NiTw==",
-      "path": "graphql.client.abstractions.websocket/6.0.3",
-      "hashPath": "graphql.client.abstractions.websocket.6.0.3.nupkg.sha512"
+      "sha512": "sha512-vgJOsT5rzlB3GGhhOdjxXV4SsUQMyP1MHeEk0bkNox6QZ4wqTBpWRBjK1gRmV570Nf3lemsgGCyvTTlrI5YXjw==",
+      "path": "graphql.client.abstractions.websocket/6.0.5",
+      "hashPath": "graphql.client.abstractions.websocket.6.0.5.nupkg.sha512"
     },
-    "GraphQL.Client.Serializer.Newtonsoft/6.0.3": {
+    "GraphQL.Client.Serializer.Newtonsoft/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4sbEc7C8yvTgdtN/VSaM/esmcuacen+4Z+AZ64em1hWF0Qg7Vmn5ZVoMkf/k3sYXfU+4w0JkbnvUnNIYE1zm/A==",
-      "path": "graphql.client.serializer.newtonsoft/6.0.3",
-      "hashPath": "graphql.client.serializer.newtonsoft.6.0.3.nupkg.sha512"
+      "sha512": "sha512-W5G9Uy9NBfjn4/jcgPxklaN+i5eBhefLvf3QRhZZ7XI5n4XVBusAvs6SAhIImq+E9SFLipi3bbyYflf227muvA==",
+      "path": "graphql.client.serializer.newtonsoft/6.0.5",
+      "hashPath": "graphql.client.serializer.newtonsoft.6.0.5.nupkg.sha512"
     },
     "GraphQL.NewtonsoftJson/7.8.0": {
       "type": "package",
@@ -358,12 +373,12 @@
       "path": "graphql.newtonsoftjson/7.8.0",
       "hashPath": "graphql.newtonsoftjson.7.8.0.nupkg.sha512"
     },
-    "GraphQL.Primitives/6.0.3": {
+    "GraphQL.Primitives/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jTD7b/hY1Uu+Ou1NsbIqCUX6qFuQeQsXmAy0hjvTiH8KQK/mqJ4FpY7yyh0frE5eyAVdTF0hlEdI8oNnVKvl2A==",
-      "path": "graphql.primitives/6.0.3",
-      "hashPath": "graphql.primitives.6.0.3.nupkg.sha512"
+      "sha512": "sha512-uW7Zt8/511I1QXYQrRTRP5olo6mVN52Dmx3SK5aLgibKHbUWWckCS6LsPtj+9jUWyKucYlV5FLbjcLx/YrwvRw==",
+      "path": "graphql.primitives/6.0.5",
+      "hashPath": "graphql.primitives.6.0.5.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",
@@ -413,6 +428,13 @@
       "sha512": "sha512-aFanlt2GOGEy7GTGLyh8f8SwhtmQwoPOHTAYCQ0brjg05Nb3F38sk4hYogpII5imyZ7w0spqwNHwpl7FZ49HOA==",
       "path": "socketio.serializer.core/3.1.1",
       "hashPath": "socketio.serializer.core.3.1.1.nupkg.sha512"
+    },
+    "SocketIO.Serializer.NewtonsoftJson/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y4XU7YqNKR+ItvS8yT2hwnSzEcIk96Zlf96l++X8w7uGy2hfHiDd/HGSq6QV9rpuWR5swX7Y9h73mnVpYChekA==",
+      "path": "socketio.serializer.newtonsoftjson/3.1.1",
+      "hashPath": "socketio.serializer.newtonsoftjson.3.1.1.nupkg.sha512"
     },
     "SocketIO.Serializer.SystemTextJson/3.1.1": {
       "type": "package",

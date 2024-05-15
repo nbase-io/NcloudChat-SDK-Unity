@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.mobile.android-logcat": "1.4.1",
     "com.unity.textmeshpro": "3.0.8",
     "com.unity.toolchain.macos-arm64-linux-x86_64": "2.0.3",
     "com.unity.modules.ai": "1.0.0",
