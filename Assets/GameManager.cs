@@ -95,8 +95,7 @@ public class GameManager : MonoBehaviour
             var user = await _nc.Connect(
                   userId: "10001",
                   name: username,
-                  profile: "https://random.imagecdn.app/500/150",
-                  language: "en");
+                  profile: "https://random.imagecdn.app/500/150");
 
             await _nc.subscribe(channelId);
 
