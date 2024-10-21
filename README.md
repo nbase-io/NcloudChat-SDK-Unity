@@ -1,6 +1,6 @@
 # NcloudChat SDK for Unity
 
-[Docs English](https://guide.ncloud-docs.com/docs/en/ncloud-chat-unity-sdk-2) | [Docs Korean](https://guide.ncloud-docs.com/docs/en/ncloud-chat-unity-sdk-2) | [Docs Japanese](https://guide.ncloud-docs.com/docs/en/ncloud-chat-unity-sdk-2) 
+[Docs English](https://guide.ncloud-docs.com/docs/en/bizapp-ncloudchat-sdkinstall) | [Docs Korean](https://guide.ncloud-docs.com/docs/ko/bizapp-ncloudchat-sdkinstall) | [Docs Japanese](https://guide.ncloud-docs.com/docs/ja/bizapp-ncloudchat-sdkinstall) 
 
 ## Overview
 
