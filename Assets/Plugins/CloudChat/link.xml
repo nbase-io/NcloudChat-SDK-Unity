@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Managed Stripping 사용 시 아래 어셈블리를 유지합니다.
+  If Managed Stripping is enabled, keep the assemblies below.
+-->
+<linker>
+  <assembly fullname="NBase-SDK-dotNET" preserve="all" />
+  <assembly fullname="GraphQL" preserve="all" />
+  <assembly fullname="GraphQL.Primitives" preserve="all" />
+  <assembly fullname="GraphQL.Client" preserve="all" />
+  <assembly fullname="GraphQL.Client.Abstractions" preserve="all" />
+  <assembly fullname="GraphQL.Client.Abstractions.Websocket" preserve="all" />
+  <assembly fullname="GraphQL.Client.Serializer.Newtonsoft" preserve="all" />
+  <assembly fullname="SocketIOClient" preserve="all" />
+  <assembly fullname="SocketIO.Core" preserve="all" />
+  <assembly fullname="SocketIO.Serializer.Core" preserve="all" />
+  <assembly fullname="SocketIO.Serializer.NewtonsoftJson" preserve="all" />
+  <assembly fullname="Newtonsoft.Json" preserve="all" />
+</linker>

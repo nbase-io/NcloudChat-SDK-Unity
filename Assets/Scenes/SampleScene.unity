@@ -472,15 +472,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 562673358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c50c677ef6249739045fd111147abf, type: 3}
+  m_Script: {fileID: 11500000, guid: 789d5c2c48ea84e56bd3abc81dc62614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   username: unity
   maxMessages: 30
   messageSpace: 5
-  channelId: 6f5b5c64-7eab-42b2-8548-bed0a31188ff
+  channelId: YOUR_CHANNEL_ID
   chatPanel: {fileID: 1842290863}
-  textObject: {fileID: 8341923301313026647, guid: 2496d7180c83c483fa40b534e84dac55, type: 3}
+  textObject: {fileID: 8341923301313026647, guid: bca87525320cd44669b30136b0ad5cbc, type: 3}
   chatBox: {fileID: 831577351}
   chatButtons:
   - {fileID: 1228799333}
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 562673358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57703a222c7024d6cbacea6a32f45af4, type: 3}
+  m_Script: {fileID: 11500000, guid: 88fb3b78499f1487db2495d3450adb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &664332940

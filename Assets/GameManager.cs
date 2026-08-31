@@ -71,7 +71,8 @@ public class GameManager : MonoBehaviour
         try
         {
             _nc.setDebug(true);
-            _nc.initialize("339c2b1c-d35b-47f2-828d-5f02a130146a", "alpha", "en");
+            // region: kr, jp, sg, us, eu
+            _nc.initialize("YOUR_PROJECT_ID", "kr", "en");
             setListener();
             await Connect();
 

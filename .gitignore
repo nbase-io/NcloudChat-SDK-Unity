@@ -60,7 +60,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-*.meta
+
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -75,3 +75,22 @@ crashlytics-build.properties
 # mac
 .DS_Store
 *.DS_Store
+
+# User-specific and IDE settings
+/[Uu]ser[Ss]ettings/
+/.vs/
+/.idea/
+
+# Auto-generated project files
+*.csproj
+*.sln
+*.user
+*.unityproj
+
+# Build outputs
+/[Bb]uild/
+/[Bb]uilds/
+/output/
+/AAA/
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
